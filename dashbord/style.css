@@ -182,28 +182,25 @@ footer {
 }
 
 
-/* @media (max-width:100rem) {
+@media (max-width: 765px) {
 
     main {
-        
-        width: 50rem;
-        
-        height: auto;   
-        margin: 120px auto;
+        width: 100%;
+        max-width: 30rem; /* mobilde en fazla 500px */
+        margin: 10px auto; /* yatayda ortala */
         display: grid;
         gap: 2rem;
     }
 
     .profile {
-        width: 30%;
-        height: auto;
+        width: 100%;
+        max-width: 28.5rem; /* veya istediğiniz max */
     }
 
     .dash-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 32%;
+        width: 100%;
+        grid-template-columns:repeat(1, 1fr);
         gap: 5rem;
     }
 
-} */
+}
