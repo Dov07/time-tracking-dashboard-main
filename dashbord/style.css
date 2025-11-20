@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 10px;
+}
+
+:root {
+
+    --Purple: hsl(246, 80%, 60%);
+    --OrangeWork: hsl(15, 100%, 70%);
+    --BluePlay: hsl(195, 74%, 62%);
+    --PinkStudy: hsl(348, 100%, 68%);
+    --GreenExercise: hsl(145, 58%, 55%);
+    --PurpleSocial: hsl(264, 64%, 52%);
+    --YellowSelfCare: hsl(43, 84%, 65%);
+    --Navy950: hsl(226, 43%, 10%);
+    --Navy900: hsl(235, 46%, 20%);
+    --Purple500: hsl(235, 45%, 61%);
+    --Navy200: hsl(236, 100%, 87%)
+}
+
+body {
+    background: var(--Navy950);
+    font-size: 1.8rem;
+}
+
+main {
+    width: 80rem;
+    height: auto;
+    margin: 130px auto;
+    display: flex;
+    gap: 2rem;
+
+}
+
+
+
+.dash-grid {
+    width: 100%;
+    height: auto;
+    ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+
+}
+
+.profile {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--Navy900);
+    display: grid;
+}
+
+.profile-details {
+    background-color: var(--Purple);
+    border-radius: 10px;
+    padding: 2.2rem 2.2rem 4rem 2.2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.profile-details h1 {
+    font-family: 'Rubik', 'sans-serif';
+    color: white;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.profile-details img {
+    width: 50%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.timer {
+    font-size: 1.8rem;
+    display: grid;
+    gap: 1.4rem;
+    padding: 1.4rem;
+}
+
+.timer a {
+    text-decoration: none;
+    color: var(--Navy200);
+    font-size: 1.4rem;
+}
+
+.active:hover {
+    color: white;
+}
+
+.all {
+    width: 95%;
+    height: fit-content;
+    border-radius: 10px;
+    display: grid;
+    position: relative;
+
+}
+
+.all img {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    left: 13rem;
+
+}
+
+.a {
+    background-color: var(--OrangeWork);
+}
+
+.b {
+    background-color: var(--BluePlay);
+}
+
+.c {
+    background-color: var(--PinkStudy);
+}
+
+.d {
+    background-color: var(--GreenExercise);
+}
+
+.e {
+    background-color: var(--PurpleSocial);
+}
+
+.f {
+    background-color: var(--YellowSelfCare);
+}
+
+.inside-grid {
+    width: 100%;
+    height: auto;
+    background-color: var(--Navy900);
+    border-radius: 10px;
+    color: white;
+    padding: 2rem;
+    position: relative;
+    top: 3rem;
+    display: grid;
+    gap: 1.2rem;
+
+
+}
+
+.inside-grid:hover {
+    background-color: var(--Purple500);
+    cursor: pointer;
+}
+
+.inside-grid>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inside-grid>div>p {
+    font-size: 1.8rem;
+}
+
+.inside-grid>div>a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+.current {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+footer {
+    display: none;
+}
+
+
+/* @media (max-width:100rem) {
+
+    main {
+        
+        width: 50rem;
+        
+        height: auto;   
+        margin: 120px auto;
+        display: grid;
+        gap: 2rem;
+    }
+
+    .profile {
+        width: 30%;
+        height: auto;
+    }
+
+    .dash-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 32%;
+        gap: 5rem;
+    }
+
+} */
