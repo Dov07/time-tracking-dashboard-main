@@ -8,7 +8,7 @@ const cards = document.querySelectorAll('.all');
 let timeData = [];
 
 // JSON'dan veriyi çekiyoruz
-fetch("data.json")
+fetch("/dashbord/data.json")
   .then(response => response.json())
   .then(data => {
     timeData = data;          // Veriyi kaydediyoruz
